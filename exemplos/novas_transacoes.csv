@@ -1,0 +1,5 @@
+id_transacao,valor,hora,transacoes_1h,distancia_km,idade_conta_dias,canal,dispositivo_novo,favorecido_novo
+EX001,85.90,14,1,3,900,pix,nao,nao
+EX002,4500.00,2,7,250,15,transferencia,sim,sim
+EX003,320.00,19,2,12,400,cartao,nao,sim
+EX004,,10,1,5,120,pix,nao,nao

@@ -1,0 +1,121 @@
+{
+  "aviso": "Dados sintéticos. Não representa desempenho em um banco real.",
+  "seed": 42,
+  "modelo_escolhido": "random_forest",
+  "criterio_modelo": "Maior average precision na validação",
+  "criterio_limiar": "Maior F2 na validação; empate favorece o maior limiar",
+  "versoes": {
+    "python": "3.12.14",
+    "sklearn": "1.8.0",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "joblib": "1.5.3"
+  },
+  "divisoes": {
+    "treino": {
+      "linhas": 12001,
+      "fraudes": 120,
+      "inicio": "2025-01-01 00:00:13+00:00",
+      "fim": "2025-04-17 23:28:28+00:00"
+    },
+    "validacao": {
+      "linhas": 4000,
+      "fraudes": 42,
+      "inicio": "2025-04-17 23:57:12+00:00",
+      "fim": "2025-05-23 20:42:24+00:00"
+    },
+    "teste": {
+      "linhas": 3999,
+      "fraudes": 46,
+      "inicio": "2025-05-23 20:42:34+00:00",
+      "fim": "2025-06-29 23:54:02+00:00"
+    }
+  },
+  "validacao": {
+    "regressao_logistica": {
+      "limiar": 0.8283809633311912,
+      "total": 4000,
+      "fraudes": 42,
+      "prevalencia": 0.0105,
+      "acuracia": 0.97625,
+      "precision": 0.18072289156626506,
+      "recall": 0.35714285714285715,
+      "f2": 0.29880478087649404,
+      "average_precision": 0.09671382886920298,
+      "roc_auc": 0.8085192136480666,
+      "taxa_alertas": 0.02075,
+      "verdadeiros_negativos": 3890,
+      "falsos_positivos": 68,
+      "falsos_negativos": 27,
+      "verdadeiros_positivos": 15
+    },
+    "random_forest": {
+      "limiar": 0.7017733400989594,
+      "total": 4000,
+      "fraudes": 42,
+      "prevalencia": 0.0105,
+      "acuracia": 0.9795,
+      "precision": 0.21428571428571427,
+      "recall": 0.35714285714285715,
+      "f2": 0.31512605042016806,
+      "average_precision": 0.14930961676146726,
+      "roc_auc": 0.7961873481075098,
+      "taxa_alertas": 0.0175,
+      "verdadeiros_negativos": 3903,
+      "falsos_positivos": 55,
+      "falsos_negativos": 27,
+      "verdadeiros_positivos": 15
+    }
+  },
+  "teste": {
+    "limiar": 0.7017733400989594,
+    "total": 3999,
+    "fraudes": 46,
+    "prevalencia": 0.011502875718929733,
+    "acuracia": 0.9747436859214804,
+    "precision": 0.19101123595505617,
+    "recall": 0.3695652173913043,
+    "f2": 0.31135531135531136,
+    "average_precision": 0.12379304882218772,
+    "roc_auc": 0.7639987241390689,
+    "taxa_alertas": 0.022255563890972743,
+    "verdadeiros_negativos": 3881,
+    "falsos_positivos": 72,
+    "falsos_negativos": 29,
+    "verdadeiros_positivos": 17
+  },
+  "teste_limiar_05": {
+    "limiar": 0.5,
+    "total": 3999,
+    "fraudes": 46,
+    "prevalencia": 0.011502875718929733,
+    "acuracia": 0.9732433108277069,
+    "precision": 0.18556701030927836,
+    "recall": 0.391304347826087,
+    "f2": 0.3202846975088968,
+    "average_precision": 0.12379304882218772,
+    "roc_auc": 0.7639987241390689,
+    "taxa_alertas": 0.024256064016004,
+    "verdadeiros_negativos": 3874,
+    "falsos_positivos": 79,
+    "falsos_negativos": 28,
+    "verdadeiros_positivos": 18
+  },
+  "baseline_teste": {
+    "limiar": 0.5,
+    "total": 3999,
+    "fraudes": 46,
+    "prevalencia": 0.011502875718929733,
+    "acuracia": 0.9884971242810703,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f2": 0.0,
+    "average_precision": 0.011502875718929733,
+    "roc_auc": 0.5,
+    "taxa_alertas": 0.0,
+    "verdadeiros_negativos": 3953,
+    "falsos_positivos": 0,
+    "falsos_negativos": 46,
+    "verdadeiros_positivos": 0
+  }
+}
